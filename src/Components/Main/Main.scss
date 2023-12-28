@@ -15,6 +15,14 @@
 
 .main {
     width: 100%;
+    .search{
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        .search_button{
+            width: 30%;
+        }
+    }
 
 
     .secTitle {

@@ -20,8 +20,6 @@ const App = () => {
           <Route path="/contact_us" element={<Contact_Us />} />
           <Route path="/how_we_work" element={<How_We_Work />} />
         </Routes>
-        {/* <Home /> */}
-        {/* {/* <Main />} */}
         <Footer /> 
       </BrowserRouter>
     </section>

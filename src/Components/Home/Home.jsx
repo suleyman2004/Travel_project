@@ -4,17 +4,18 @@ import back from "../../image/background-image.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Main from "../Main/Main";
-import SearchExample from "./Search";
 const Home = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
-
+  function Search(){
+    alert("doesn't work backend.Please use another search")
+  }
   return (
     <div>
       <section className="home">
         <div className="overlay"></div>
-        <img src={back} alt="" />
+        <img src={back} alt="Awaza" />
 
         <div className="homeContent container">
           <div className="textDiv">
@@ -63,7 +64,7 @@ const Home = () => {
               </div>
 
               <div className="flex">
-                <button className="searchOptions" onClick="Search()">
+                <button type="button" className="searchOptions" onClick={Search}>
                   Search
                 </button>
               </div>
@@ -71,7 +72,6 @@ const Home = () => {
           </form>
         </div>
       </section>
-      <SearchExample/>
       <Main />
     </div>
   );
